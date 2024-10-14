@@ -1,3 +1,78 @@
+/*  
+    #a4c2d1; egg blue
+    #dbdcde; light grey
+    #1f7798; mid-blue
+    #184f63; dark-blue
+*/
+
+/* global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+
 body {
-    background-color: red;
+    font-family: "Poppins", sans-serif;
+    background-color: #a4c2d1;
+    /* egg blue */
+}
+
+h1,
+h2 {
+    font-family: "DM Serif Display"serif;
+    color: #184f63;
+    /* dark blue */
+}
+
+/* Style the sections: About, Portfolio, Contact */
+
+#about {
+    background-color: white;
+}
+
+#portfolio {
+    background-color: #dbdcde;
+    /* light grey */
+}
+
+/* h3 */
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2rem;
+}
+
+/* Portfolio buttons */
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798;
+}
+
+#portfolio .card {
+    min-height: 394px;
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+#contact {
+    background-color: white;
+}
+
+/* Style the Hero section with ide of Hero */
+#hero {
+    background-color: #dbdcde;
+    /* this is in case the image does not load */
+    background-image: url("../images/background.webp");
+    background-size: cover;
+    background-position: 50% 70%;
+    /* this moves the position of the picture left, right, bottom, top */
+    min-height: 500px;
+    padding: 5% 7%;
+}
+
+/* Media querie for XL screen */
+/* Because the porftolio buttons and card-text are too separate*/
+/* Use bootstrap breakpoint */
+@media screen and (min-width:1200px) {
+    #portfolio .card-text{
+        min-height: auto;        /* this reduces the padding height in xl screens */
+    }
 }
