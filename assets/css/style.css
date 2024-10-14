@@ -5,7 +5,7 @@
     #184f63; dark-blue
 */
 
-/* global styles */
+/* GLOBAL STYLES */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
 
@@ -28,7 +28,12 @@ h2 {
     border-radius: 0;    /* this removes the border-radious, making a crisp corner */
 }
 
-/* Style the sections: About, Portfolio, Contact */
+.mid-blue-button:hover,
+.mid-blue-button:hover * {
+    background-color:#1d6d8a;
+    border-color:#1d6d8a;
+}
+/* SECTION styles: About, Portfolio, Contact */
 
 #about {
     background-color: white;
