@@ -22,6 +22,12 @@ h2 {
     /* dark blue */
 }
 
+/* Create a new class and add it to the PARENT classes (e.g. card) */
+.sharp-corners,
+.sharp-corners * {        /* Important, instead of adding this new class to all descendant elements, you can use "*" */
+    border-radius: 0;    /* this removes the border-radious, making a crisp corner */
+}
+
 /* Style the sections: About, Portfolio, Contact */
 
 #about {
@@ -46,6 +52,7 @@ h2 {
 
 #portfolio .card {
     min-height: 394px;
+
 }
 
 #portfolio .card-text {
@@ -72,7 +79,8 @@ h2 {
 /* Because the porftolio buttons and card-text are too separate*/
 /* Use bootstrap breakpoint */
 @media screen and (min-width:1200px) {
-    #portfolio .card-text{
-        min-height: auto;        /* this reduces the padding height in xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+        /* this reduces the padding height in xl screens */
     }
 }
